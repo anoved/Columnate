@@ -1,0 +1,42 @@
+html {
+	height: 100%;
+	width: min-content;
+
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	height: 100%;
+	width: 100%;
+
+	margin: 0;
+	padding: 0;
+
+	
+	column-fill: auto;
+	column-width: 20em;
+	column-count: auto;
+	column-gap: 1.5em;
+
+	line-height: 1.5em;
+	
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: #fbfbfb;
+	color: #080000;
+	font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	padding-top: 1em;
+	padding-left: 1em;
+}
+
+p {
+	text-indent: 1em;
+}
+
+img {
+	height: auto !important;
+	max-width: 18em;
+}
