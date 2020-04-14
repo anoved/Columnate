@@ -32,7 +32,7 @@ javascript:(function() {
     // load readability script and set it to be applied when loaded
     cmjs = document.createElement('script');
     cmjs.type='text/javascript';
-    cmjs.src='//anoved.github.io/Columnate/Readability.js';
+    cmjs.src='//anoved.github.io/Columnate/readability/Readability.js';
     cmjs.onreadystatechange = MakeReadable;
     cmjs.onload = MakeReadable;
     document.getElementsByTagName('head')[0].appendChild(cmjs);
