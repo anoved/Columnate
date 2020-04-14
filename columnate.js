@@ -17,7 +17,7 @@ javascript:(function() {
     // apply columnate stylesheet to document
     cmcss=document.createElement('link');
     cmcss.rel='stylesheet';
-    cmcss.href='//anoved.github.io/mcreadability/readability-new.css';
+    cmcss.href='//anoved.github.io/columnate/columnate.css';
     cmcss.type='text/css';
     cmcss.media='all';
     document.getElementsByTagName('head')[0].appendChild(cmcss);
@@ -32,7 +32,7 @@ javascript:(function() {
     // load readability script and set it to be applied when loaded
     cmjs = document.createElement('script');
     cmjs.type='text/javascript';
-    cmjs.src='//anoved.github.io/mcreadability/Readability-new.js';
+    cmjs.src='//anoved.github.io/columnate/Readability.js';
     cmjs.onreadystatechange = MakeReadable;
     cmjs.onload = MakeReadable;
     document.getElementsByTagName('head')[0].appendChild(cmjs);
