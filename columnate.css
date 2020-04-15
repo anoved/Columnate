@@ -8,11 +8,10 @@ html {
 
 body {
 	height: 100%;
-	width: max-content;
+	width: fit-content;
 
 	margin: 0;
 	padding: 0;
-
 	
 	column-fill: auto;
 	column-width: 20em;
@@ -20,11 +19,6 @@ body {
 	column-gap: 1.5em;
 
 	line-height: 1.5em;
-	
-	font-family: Georgia, "Times New Roman", Times, serif;
-	background: #fbfbfb;
-	color: #080000;
-	font-size: 12px;
 }
 
 h1, h2, h3, h4, h5, h6, p {

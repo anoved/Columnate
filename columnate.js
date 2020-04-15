@@ -14,13 +14,17 @@ javascript:(function() {
         ic[k].remove();
     }
 
-    // apply columnate stylesheet to document
-    cmcss=document.createElement('link');
-    cmcss.rel='stylesheet';
-    cmcss.href='//anoved.github.io/Columnate/columnate.css';
-    cmcss.type='text/css';
-    cmcss.media='all';
-    document.getElementsByTagName('head')[0].appendChild(cmcss);
+    // apply columnate stylesheets to document
+    var LoadStylesheet = function(url) {
+        var c = document.createElement('link');
+        c.rel = 'stylesheet';
+        c.type = 'text/css';
+        c.media = 'all';
+        c.href = url;
+        document.getElementsByTagName('head')[0].appendChild(c);
+    }
+    LoadStylesheet('//anoved.github.io/Columnate/columnate.css');
+    LoadStylesheet('//anoved.github.io/Columnate/appearance.css');
   
     // callback that will replace document content with readable version
     var MakeReadable = function() {   
