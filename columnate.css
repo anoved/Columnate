@@ -8,7 +8,7 @@ html {
 
 body {
 	height: 100%;
-	width: 100%;
+	width: max-content;
 
 	margin: 0;
 	padding: 0;
@@ -30,6 +30,8 @@ body {
 h1, h2, h3, h4, h5, h6, p {
 	padding-top: 1em;
 	padding-left: 1em;
+	margin-block-start: 0;
+	margin-block-end: 0;
 }
 
 p {
