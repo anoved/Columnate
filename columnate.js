@@ -1,5 +1,4 @@
-javascript:(function() {
-
+function Columnate() {
     // remove external stylesheets from document
     var lc = document.getElementsByTagName('link');
     for (var i = lc.length - 1; i >= 0; i--) {
@@ -40,5 +39,4 @@ javascript:(function() {
     cmjs.onreadystatechange = MakeReadable;
     cmjs.onload = MakeReadable;
     document.getElementsByTagName('head')[0].appendChild(cmjs);
-
-})();
+};

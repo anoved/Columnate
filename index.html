@@ -1,12 +1,25 @@
 <html>
 <head>
     <title>Columnate</title>
+
+    <script type="text/javascript" src="uglifyjs.js"></script>
+    <script type="text/javascript" src="columnate.js"></script>
+
     <script>
         
         function CreateLink() {
-            /* Presently manually converted from columnate.js using https://martijnbrekelmans.com/bookmarkletify/ */
-            var url = 'javascript: (function () {!function(){for(var lc=document.getElementsByTagName("link"),i=lc.length-1;i>=0;i--)"stylesheet"==lc[i].rel&&lc[i].remove();for(var ic=document.getElementsByTagName("style"),k=ic.length-1;k>=0;k--)ic[k].remove();var LoadStylesheet=function(url){var c=document.createElement("link");c.rel="stylesheet",c.type="text/css",c.media="all",c.href=url,document.getElementsByTagName("head")[0].appendChild(c)};LoadStylesheet("//anoved.github.io/Columnate/columnate.css"),LoadStylesheet("//anoved.github.io/Columnate/appearance.css");var MakeReadable=function(){var doclone=document.cloneNode(!0),article=new Readability(doclone).parse();document.body.innerHTML="<h1>"+article.title+"</h1>"+article.content};cmjs=document.createElement("script"),cmjs.type="text/javascript",cmjs.src="//anoved.github.io/Columnate/readability/Readability.js",cmjs.onreadystatechange=MakeReadable,cmjs.onload=MakeReadable,document.getElementsByTagName("head")[0].appendChild(cmjs)}();}())';
+
+            // cribbed from bookmarkletify
+            var toplevel_ast = UglifyJS.parse(Columnate.toString() + "Columnate();");
+            toplevel_ast.figure_out_scope();
+            var compressor = UglifyJS.Compressor();
+            var compressed_ast = toplevel_ast.transform(compressor);
+            compressed_ast.figure_out_scope();
+
+            var url = "javascript: (function () {" + compressed_ast.print_to_string() + "}())";
             document.getElementById("bookmarkletLink").href = url;
+
+            // do something to update the link style once ready
         };
 
         function ClickHelp() {
