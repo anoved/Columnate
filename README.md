@@ -12,7 +12,7 @@ Find a web page with a long article. Click the **Columnate** bookmarklet to refo
 
 ## Acknowledgements
 
-Columnate uses [Mozilla Readability](https://github.com/mozilla/readability). Columnate is a simplified rewrite of my earlier effort [McReadability](https://github.com/anoved/mcreadability), which was based on a now-obselete predecessor of Mozilla Readability. [Bookmarkletify](https://martijnbrekelmans.com/bookmarkletify/) by Martijn Brekelmans is currently used to minify Columnate's code.
+Columnate uses [Mozilla Readability](https://github.com/mozilla/readability). Columnate is a simplified rewrite of my earlier effort [McReadability](https://github.com/anoved/mcreadability), which was based on a now-obselete predecessor of Mozilla Readability. Bookmarklet creation is modelled after [Bookmarkletify](https://martijnbrekelmans.com/bookmarkletify/) by Martijn Brekelmans.
 
 ## License
 

@@ -1,10 +1,21 @@
 <html>
 <head>
     <title>Columnate</title>
-
+    <style type="text/css">
+        body {
+            font-family: sans-serif;
+            font-size: large;
+            margin: 30px;
+        }
+        .ready {
+            border: 1px solid blue;
+            padding: 6px;
+            border-radius: 6px;
+            background: #eef;
+        }
+    </style>
     <script type="text/javascript" src="uglifyjs.js"></script>
     <script type="text/javascript" src="columnate.js"></script>
-
     <script>
         
         function CreateLink() {
@@ -18,8 +29,7 @@
 
             var url = "javascript: (function () {" + compressed_ast.print_to_string() + "}())";
             document.getElementById("bookmarkletLink").href = url;
-
-            // do something to update the link style once ready
+            document.getElementById("bookmarkletLink").className = "ready";
         };
 
         function ClickHelp() {
