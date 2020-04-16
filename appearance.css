@@ -4,3 +4,7 @@ body {
     color: #080000;
     font-size: 12px;
 }
+
+figcaption {
+    color: #777;
+}

@@ -21,14 +21,21 @@ body {
 	line-height: 1.5em;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+figure {
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, figcaption {
 	padding-top: 1em;
 	padding-left: 1em;
 	margin-block-start: 0;
 	margin-block-end: 0;
+	margin-inline-start: 0;
+	margin-inline-end: 0;
 }
 
-p {
+p, figcaption {
 	text-indent: 1em;
 }
 
