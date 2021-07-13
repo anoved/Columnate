@@ -17,8 +17,6 @@ body {
 	column-width: 20em;
 	column-count: auto;
 	column-gap: 1.5em;
-
-	line-height: 1.5em;
 }
 
 figure {
@@ -27,8 +25,8 @@ figure {
 }
 
 h1, h2, h3, h4, h5, h6, p, figcaption {
-	padding-top: 1em;
-	padding-left: 1em;
+	padding-top: 16px;
+	padding-left: 16px;
 	margin-block-start: 0;
 	margin-block-end: 0;
 	margin-inline-start: 0;
@@ -36,10 +34,10 @@ h1, h2, h3, h4, h5, h6, p, figcaption {
 }
 
 p, figcaption {
-	text-indent: 1em;
+	line-height: 1.5em;
 }
 
 img {
 	height: auto !important;
-	max-width: 18em;
+	max-width: 100%;
 }
