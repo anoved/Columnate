@@ -19,6 +19,8 @@ function Columnate() {
         LoadStylesheet('//anoved.github.io/Columnate/appearance.css');
         document.title = article.title;
         // reset body html to nothing but reformatted content  
+        document.body.removeAttribute("class");
+        document.body.removeAttribute("style");
         document.body.innerHTML = "<h1>"+article.title+"</h1>"+article.content;
     };
 
