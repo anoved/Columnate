@@ -13,6 +13,10 @@ function Columnate() {
     var MakeReadable = function() {   
         var doclone = document.cloneNode(true);
         var article = new Readability(doclone).parse();
+        // strip stray styling from the html tag itself
+        var htmltag = document.getElementsByTagName("html")[0];
+        htmltag.removeAttribute("class");
+        htmltag.removeAttribute("style");
         // reset head to nothing but our stylesheets
         document.head.innerHTML = "";
         LoadStylesheet('//anoved.github.io/Columnate/columnate.css');
