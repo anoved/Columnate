@@ -46,3 +46,7 @@ iframe {
 	width: auto;
 	height: auto;
 }
+
+blockquote {
+	margin-right: 0;
+}
