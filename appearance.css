@@ -8,3 +8,7 @@ body {
 figcaption {
     color: #777;
 }
+
+figure {
+    font-style: italic;
+}
